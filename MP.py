@@ -90,9 +90,3 @@ plt.figure(figsize=(10,6))
 sns.barplot(x='Importance', y='Feature', hue='Feature',data=feat_df, palette='viridis')
 plt.title('Важность признаков - Random Forest')
 plt.show()
-
-y_test_pred_lr = log_reg.predict(X_test_scaled)
-y_test_pred_rf = rf_clf.predict(test_df.drop("id", axis=1))
-
-
-
